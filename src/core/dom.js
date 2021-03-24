@@ -1,5 +1,3 @@
-'use strict';
-
 class Dom {
   constructor(selector) {
     // #app
@@ -40,6 +38,14 @@ class Dom {
       this.$el.appendChild(node);
     }
     return this;
+  }
+
+  closest(selector) {
+    return $(this.$el.closest(selector));
+  }
+
+  getCoords() {
+    return this.$el.getBoundingClientRect();
   }
 }
 
