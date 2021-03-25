@@ -1,4 +1,3 @@
-'use strict';
 import { $ } from '@core/dom';
 export class Excel {
   constructor(selector, options) {
